@@ -67,6 +67,7 @@ body {
   background-color: var(--shape-background);
   display: flex;
   gap: 20px;
+  border-radius: 40px;
 }
 
 
