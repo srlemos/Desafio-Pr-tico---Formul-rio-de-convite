@@ -62,8 +62,11 @@
   --body-xs: 600 0.75rem var(--open-sans);
 }
 
-h1 {
-  font: var(--heading-md);
+body {
+  margin: 20px;
+  background-color: var(--shape-background);
+  display: flex;
+  gap: 20px;
 }
 
 
