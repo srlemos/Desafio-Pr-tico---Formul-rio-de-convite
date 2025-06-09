@@ -40,6 +40,9 @@
 }
 
 .input-wrapper {
+  display: flex;
+  flex-direction: column;
+
   & label {
     display: block;
     color: var(--text-body);
@@ -48,8 +51,12 @@
     margin-bottom: 12px;
   }
 
-  & input {
-    width: 100%;
+  & textarea {
+    all: unset;
+  }
+
+  & input,
+  textarea {
     height: 48px;
     border-radius: 8px;
     border: 1px solid var(--input-stroke);
@@ -64,13 +71,81 @@
       color: var(--input-placeholder);
     }
   }
+
+  & textarea {
+    height: 136px;
+  }
 }
 
 .radio-wrapper {
-  display: flex;
-  gap: 4px;
-
-  & .radio {
-    all: unset;
+  & label {
+    display: block;
+    color: var(--text-body);
+    font: var(--body-sm);
+    font-weight: 400;
+    margin-bottom: 12px;
   }
+}
+
+.radio-flex {
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  height: 48px;
+  background-color: var(--input-base);
+  gap: 4px;
+}
+
+.radio-input {
+  display: flex;
+  gap: 8px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-block: 4px;
+  transition: all 0.4s;
+  /* border: 1px solid red; */
+
+  & .radio,
+  & .radio:focus,
+  & .radio:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  & label {
+    margin: 0;
+    color: var(--text-body);
+  }
+
+  &:has(:checked) {
+    border-radius: 4px;
+
+    background-color: var(--shape-hover);
+
+    & label {
+      color: var(--text-heading);
+    }
+
+    & svg path {
+      fill: var(--brand-light);
+    }
+  }
+
+  & .radio:not(:checked) {
+    cursor: pointer;
+  }
+}
+
+.right {
+  margin-right: 4px;
+}
+
+.left {
+  margin-left: 4px;
 }

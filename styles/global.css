@@ -85,6 +85,10 @@ body {
   flex: 2;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 input[type="date"] {
 
   &::-webkit-calendar-picker-indicator {

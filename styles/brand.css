@@ -5,6 +5,7 @@
   background-repeat: none;
   background-size: cover;
   border-radius: 12px;
+  overflow: none;
 
   & img {
     width: 45.85px;
