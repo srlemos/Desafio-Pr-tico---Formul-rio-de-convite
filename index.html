@@ -26,8 +26,6 @@
         <fieldset class="sobre">
           <div class="legend">
             <svg
-              width="32"
-              height="32"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -143,27 +141,66 @@
           </div>
         </fieldset>
         <fieldset class="personalizacao">
-          <div class="legend">
+          <div class="legend1">
             <img
               src="./assets/icons/paintbrush-vertical.svg"
               alt="ícone de pincel vertical"
             />
             <legend>Personalização</legend>
           </div>
-          <div class="personlizacao-cores">
+          <div class="personalizacao-cores">
             <label for="cor">Cor Principal</label>
             <div class="escolha-cores">
-              <input type="radio" name="cor" id="light" value="light" />
-              <input type="radio" name="cor" id="vany" value="navy" />
-              <input type="radio" name="cor" id="purple" value="purple" />
-              <input type="radio" name="cor" id="fuschia" value="fuschia" />
-              <input type="radio" name="cor" id="pink" value="pink" />
-              <input type="radio" name="cor" id="danger" value="danger" />
-              <input type="radio" name="cor" id="orange" value="orange" />
-              <input type="radio" name="cor" id="yellow" value="yellow" />
-              <input type="radio" name="cor" id="lime" value="lime" />
-              <input type="radio" name="cor" id="green" value="green" />
-              <input type="radio" name="cor" id="cyan" value="cyan" />
+              <div class="radio-wrapper-1">
+                <div class="radio-color light"></div>
+                <input
+                  type="radio"
+                  name="cor"
+                  id="light"
+                  value="light"
+                  class="radio-colors"
+                />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color navy"></div>
+                <input type="radio" name="cor" id="vany" value="navy" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color purple"></div>
+                <input type="radio" name="cor" id="purple" value="purple" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color fuschia"></div>
+                <input type="radio" name="cor" id="fuschia" value="fuschia" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color pink"></div>
+                <input type="radio" name="cor" id="pink" value="pink" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color danger"></div>
+                <input type="radio" name="cor" id="danger" value="danger" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color orange"></div>
+                <input type="radio" name="cor" id="orange" value="orange" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color yellow"></div>
+                <input type="radio" name="cor" id="yellow" value="yellow" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color lime"></div>
+                <input type="radio" name="cor" id="lime" value="lime" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color green"></div>
+                <input type="radio" name="cor" id="green" value="green" />
+              </div>
+              <div class="radio-wrapper-1">
+                <div class="radio-color cyan"></div>
+                <input type="radio" name="cor" id="cyan" value="cyan" />
+              </div>
             </div>
           </div>
           <div class="tema-evento">
@@ -174,7 +211,7 @@
                   type="radio"
                   id="aniversario"
                   value="aniversario"
-                  name="aniversario"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/aniversario.png"
@@ -187,7 +224,7 @@
                   type="radio"
                   id="infantil"
                   value="infantil"
-                  name="infantil"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/infantil.png"
@@ -200,59 +237,59 @@
                   type="radio"
                   id="formatura"
                   value="formatura"
-                  name="formatura"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/formatura.png"
                   alt="imagem de formatura"
                 />
-                <label for="formatura">formatura</label>
+                <label for="formatura">Formatura</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="casamento"
                   value="casamento"
-                  name="casamento"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/casamento.png"
                   alt="imagem de casamento"
                 />
-                <label for="casamento">casamento</label>
+                <label for="casamento">Casamento</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="cha-de-bebe"
                   value="cha-de-bebe"
-                  name="cha-de-bebe"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/cha-de-bebe.png"
                   alt="imagem de cha-de-bebe"
                 />
-                <label for="cha-de-bebe">cha-de-bebe</label>
+                <label for="cha-de-bebe">chá de bebe</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="cha-de-panela"
                   value="cha-de-panela"
-                  name="cha-de-panela"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/cha-de-panela.png"
                   alt="imagem de cha-de-panela"
                 />
-                <label for="cha-de-panela">cha-de-panela</label>
+                <label for="cha-de-panela">chá de panela</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="carnaval"
                   value="carnaval"
-                  name="carnaval"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/carnaval.png"
@@ -261,32 +298,32 @@
                 <label for="carnaval">carnaval</label>
               </div>
               <div class="evento-wrapper">
-                <input type="radio" id="pascoa" value="pascoa" name="pascoa" />
+                <input type="radio" id="pascoa" value="pascoa" name="evento" />
                 <img
                   src="./assets/eventos-imgs/pascoa.png"
                   alt="imagem de pascoa"
                 />
-                <label for="pascoa">pascoa</label>
+                <label for="pascoa">páscoa</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="sao-joao"
                   value="sao-joao"
-                  name="sao-joao"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/sao-joao.png"
                   alt="imagem de sao-joao"
                 />
-                <label for="sao-joao">sao-joao</label>
+                <label for="sao-joao">sao João</label>
               </div>
               <div class="evento-wrapper">
                 <input
                   type="radio"
                   id="hallowen"
                   value="hallowen"
-                  name="hallowen"
+                  name="evento"
                 />
                 <img
                   src="./assets/eventos-imgs/hallowen.png"
@@ -295,7 +332,7 @@
                 <label for="hallowen">hallowen</label>
               </div>
               <div class="evento-wrapper">
-                <input type="radio" id="natal" value="natal" name="natal" />
+                <input type="radio" id="natal" value="natal" name="evento" />
                 <img
                   src="./assets/eventos-imgs/natal.png"
                   alt="imagem de natal"
@@ -303,7 +340,7 @@
                 <label for="natal">natal</label>
               </div>
               <div class="evento-wrapper">
-                <input type="radio" id="outro" value="outro" name="outro" />
+                <input type="radio" id="outro" value="outro" name="evento" />
                 <img
                   src="./assets/eventos-imgs/outro.png"
                   alt="imagem de outro"
@@ -318,23 +355,37 @@
               <div class="radio-estilo">
                 <div class="estilo-wrapper">
                   <input
-                    type="radio"
+                    type="checkbox"
                     name="escuro"
                     id="escuro"
                     value="escuro"
                   />
+
+                  <div class="toogle"></div>
+                  <label for="escuro" class="text-toogle"></label>
                 </div>
-                <label for="escuro">Escuro</label>
               </div>
             </div>
             <div class="foto-capa">
               <span>Foto de capa</span>
-              <div class="input-files">
-                <input type="file" name="file" id="file" />
+              <div class="files-wrapper">
+                <div class="input-files">
+                  <img src="./assets/icons/upload.svg" alt="ícone de upload" />
+                  <label for="file" class="button-file">Selecionar</label>
+                </div>
+                <input type="file" name="file" id="file" accept="image/png" required />
+              </div>
+              <div class="msg-error">
+                <img
+                  src="./assets/icons/circle-alert.svg"
+                  alt="ícone de erro em cor vermelha"
+                />
+                <span>Error message</span>
               </div>
             </div>
           </div>
         </fieldset>
+        <input type="submit" value="submit" />
       </form>
     </section>
   </body>
