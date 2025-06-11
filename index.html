@@ -373,15 +373,16 @@
                   <img src="./assets/icons/upload.svg" alt="ícone de upload" />
                   <label for="file" class="button-file">Selecionar</label>
                 </div>
-                <input type="file" name="file" id="file" accept="image/png" required />
+                <input type="file" name="file" id="file" required class="input-file-required"/>
+                <div class="msg-error">
+                  <img
+                    src="./assets/icons/circle-alert.svg"
+                    alt="ícone de erro em cor vermelha"
+                  />
+                  <span>Campo requirido</span>
+                </div>
               </div>
-              <div class="msg-error">
-                <img
-                  src="./assets/icons/circle-alert.svg"
-                  alt="ícone de erro em cor vermelha"
-                />
-                <span>Error message</span>
-              </div>
+              
             </div>
           </div>
         </fieldset>

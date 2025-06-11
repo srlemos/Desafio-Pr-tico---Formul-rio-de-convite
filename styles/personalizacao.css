@@ -267,15 +267,22 @@
     font: var(--body-sm);
     font-weight: 400;
   }
+}
+
+.msg-error {
+  display: none;
+}
+
+.files-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* display: flex;
+  align-items: center; */
+  margin-top: 12px;
+  gap: 12px;
 
   & input[type="file"]::file-selector-button {
-    /* all: unset;
-    background-color: var(--shape-button);
-    height: 40px;
-    border-radius: 8px;
-    color: var(--text-heading);
-    font: var(--body-sm);
-    cursor: pointer; */
     display: none;
   }
 
@@ -284,13 +291,22 @@
     color: var(--input-placeholder);
     font-weight: 400;
   }
-}
 
-.files-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 12px;
-  gap: 12px;
+  & input[type="file"]:required + .msg-error {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+
+    span {
+      color: var(--danger);
+      font: var(--body-xs);
+      font-weight: 400;
+    }
+  }
+
+  & input[type="file"]:valid + .msg-error {
+    display: none;
+  }
 }
 
 .input-files {
@@ -304,18 +320,4 @@
   color: var(--text-heading);
   font: var(--body-sm);
   cursor: pointer;
-}
-
-.msg-error {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-
-  span {
-    color: var(--danger);
-    font: var(--body-xs);
-    font-weight: 400;
-  }
-
-  display: none;
 }
