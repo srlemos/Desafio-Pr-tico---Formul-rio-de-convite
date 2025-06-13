@@ -90,6 +90,7 @@
                       type="radio"
                       name="tipo"
                       class="radio"
+                      checked
                     />
                     <label for="presencial">Presencial</label>
                   </div>
@@ -386,7 +387,35 @@
             </div>
           </div>
         </fieldset>
-        <input type="submit" value="submit" />
+        <fieldset class="contato">
+          <div class="legend1">
+            <img
+              src="./assets/icons/contact.svg"
+              alt="ícone de pincel vertical"
+            />
+            <legend>Dados para contato</legend>
+          </div>
+          <div class="formulario-de-contato">
+            <div class="name">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" required placeholder="Nome completo">
+              <div class="required">
+                <img src="./assets/icons/circle-alert.svg" alt="ícone de círculo de alerta vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+            <div class="outros-contatos">
+              <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+              </div>
+              <div class="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </div>
+        </fielset>
       </form>
     </section>
   </body>
