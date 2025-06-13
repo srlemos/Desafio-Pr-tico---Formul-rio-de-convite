@@ -1,8 +1,14 @@
 .invite {
   width: 820px;
+  height: 100vh;
   padding: 80px 130px;
   background-color: var(--shape-body);
   border-radius: 12px;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   & h2 {
     margin-bottom: 40px;
