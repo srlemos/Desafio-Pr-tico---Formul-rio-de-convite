@@ -34,6 +34,7 @@
     font: var(--body-sm);
     color: var(--text-body);
     font-weight: 400;
+    cursor: pointer;
   }
 }
 
@@ -68,6 +69,7 @@
 
     &:checked + img {
       display: initial;
+      cursor: pointer;
     }
   }
  
