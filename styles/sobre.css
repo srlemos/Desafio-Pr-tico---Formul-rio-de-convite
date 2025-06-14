@@ -43,13 +43,9 @@
     margin-bottom: 12px;
   }
 
-  & textarea {
-    all: unset;
-  }
-
   & input,
   textarea {
-    height: 48px;
+    all: unset;
     border-radius: 8px;
     border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
@@ -61,6 +57,15 @@
 
     &::placeholder {
       color: var(--input-placeholder);
+    }
+
+    &:hover {
+      border-color: var(--brand-light);
+    }
+
+    &:focus {
+      border: 1px solid var(--brand-light);
+      color: var(--text-heading);
     }
   }
 
@@ -85,6 +90,10 @@
   height: 48px;
   background-color: var(--input-base);
   gap: 4px;
+
+  &:hover {
+    border-color: var(--brand-light);
+  }
 }
 
 .radio-input {

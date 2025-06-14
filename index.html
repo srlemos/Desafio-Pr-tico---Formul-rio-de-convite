@@ -374,7 +374,13 @@
                   <img src="./assets/icons/upload.svg" alt="ícone de upload" />
                   <label for="file" class="button-file">Selecionar</label>
                 </div>
-                <input type="file" name="file" id="file" required class="input-file-required"/>
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  required
+                  class="input-file-required"
+                />
                 <div class="msg-error">
                   <img
                     src="./assets/icons/circle-alert.svg"
@@ -383,7 +389,6 @@
                   <span>Campo requirido</span>
                 </div>
               </div>
-              
             </div>
           </div>
         </fieldset>
@@ -398,20 +403,39 @@
           <div class="formulario-de-contato">
             <div class="name">
               <label for="name">Nome</label>
-              <input type="text" name="name" id="name" required placeholder="Nome completo">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Nome completo"
+              />
               <div class="required">
-                <img src="./assets/icons/circle-alert.svg" alt="ícone de círculo de alerta vermelho">
+                <img
+                  src="./assets/icons/circle-alert.svg"
+                  alt="ícone de círculo de alerta vermelho"
+                />
                 <span>Campo obrigatório</span>
               </div>
             </div>
             <div class="outros-contatos">
               <div class="email">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="exemplo@email.com"
+                />
               </div>
               <div class="telefone">
                 <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                <input
+                  type="tel"
+                  name="telefone"
+                  id="telefone"
+                  placeholder="(99) 99999-9999"
+                />
               </div>
             </div>
           </div>
@@ -419,21 +443,43 @@
         <fieldset class="footer">
           <div class="checkboxes">
             <div class="checkbox">
-              <input type="checkbox" name="termos" id="termos">
+              <div class="checkbox-container">
+                <input type="checkbox" name="termos" id="termos" />
+                <img src="./assets/icons/check.svg" alt="">
+              </div>
+              
               <label for="termos">
-                Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política e Privacidade</a>
+                Li e concordo com os <a href="#">Termos e Condições</a> e com a
+                <a href="#">Política e Privacidade</a>
               </label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="aceite-email" id="aceite-email">
-              <label for="aceite-email">Aceito receber atualizações e promoções por e-mail</label>
+              <div class="checkbox-container">
+                
+                <input type="checkbox" name="aceite-email" id="aceite-email" />
+                <img src="./assets/icons/check.svg" alt="">
+              </div>
+              
+              <label for="aceite-email"
+                >Aceito receber atualizações e promoções por e-mail</label
+              >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="aceite-sms" id="aceite-sms">
-              <label for="aceite-sms">Aceito receber atualizações e promoções por SMS</label>
+              <div class="checkbox-container">
+                
+                <input type="checkbox" name="aceite-sms" id="aceite-sms" />
+                <img src="./assets/icons/check.svg" alt="ícone de checkbox tickado">
+              </div>
+              
+              <label for="aceite-sms"
+                >Aceito receber atualizações e promoções por SMS</label
+              >
             </div>
           </div>
-          <input type="submit" value="Gerar convite">
+          <div class="button-submit">
+            <img src="./assets/icons/ticket.svg" alt="ícone de ticket">
+            <input type="submit" value="Gerar convite" />
+          </div>
         </fieldset>
       </form>
     </section>
